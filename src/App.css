@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+.input_row{
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  padding: 0 15px;
+}
+.input_row img{
+  height: 40px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .2;
+}
+.input_row input{
+  outline: none;
+  width: 100%;
+  border: solid #ddd;
+  border-width: 0 0 1px;
+  height: 70px;
+  padding-left: 80px;
+  font-size: 24px;
+}
+.results{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.results > div{
+  text-transform: capitalize;
+    font-size: 36px;
+    text-align: center;
+}
+.results > div span{
+  display: block;
+  font-weight: bold;
+  font-size: 22px;
+}
+.results > div + div{
+  margin-left: 50px;
+}
+.results > div img{
+  height: 70px;
+  position: relative;
+  top: -10px;
+  pointer-events: none;
+}
+
+@media(max-width:768px){
+  .results > div img{
+    top: -50px;
+  }
+  .input_row input{
+    height: 50px;
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  .input_row img{
+    height: 25px;
+  }
+  .results{
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .results > div{
+    width: 100%;
+    font-size: 30px;
+  }
+  .results > div + div{
+    margin: 20px 0 0 0;
+  }
+  .results > div span{
+    font-size: 20px;
+  }
+}
